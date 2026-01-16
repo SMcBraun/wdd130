@@ -2,14 +2,20 @@ main {
     max-width: 840px;
 }
 
+nav {
+    background-color: orange;
+    padding: 10px;
+}
+
 nav a {
     color: white;
     padding: 10px;
     display: block;
+
 }
 
 h1 {
-    color: solid black;
+    color: black;
 }
 
 main img {
@@ -18,35 +24,36 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px red;
+}
 
-    main img,
-    aside img {
-        display: block;
-        margin: 0 auto;
-    }
+main img,
+aside img {
+    display: block;
+    margin: 0 auto;
+}
 
-    p {
-        padding: 0;
-    }
+p {
+    padding: 0;
+}
 
-    aside {
-        width: 20rem;
-        margin: 1rem;
-        border: 1px solid rgb(0 0 0 / 0.2);
-        padding: 1rem;
-        background-color: #eee;
-        color: #333;
-        text-align: center;
-        box-shadow: 0 0 30px red;
-    }
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: orange;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 30px red;
+}
 
-    aside img {
-        width: 200px;
-        height: auto;
-    }
+aside img {
+    width: 200px;
+    height: auto;
+}
 
-    footer {
-        margin-top: 1em;
-        border-top: 1px solid #000;
-        text-align: center;
-    }
+footer {
+    margin-top: 1em;
+    border-top: 1px solid yellow;
+    text-align: center;
+}
