@@ -37,6 +37,7 @@ main img {
         background-color: #eee;
         color: #333;
         text-align: center;
+        box-shadow: 0 0 30px red;
     }
 
     aside img {
