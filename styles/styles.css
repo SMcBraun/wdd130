@@ -59,7 +59,8 @@ aside {
     margin: 1rem auto;
     border: 1px solid black;
     padding: 1rem;
-    background-color: orangered color: White text-align: center;
+    background-color: orangered color: White;
+    Text-align: center;
     box-shadow: var(--shadow-red);
     position: relative;
 }
