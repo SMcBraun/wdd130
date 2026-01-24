@@ -30,6 +30,13 @@ h2 {
     text-align: center;
 }
 
+section h2 {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 12px;
+    margin: 0;
+}
+
 nav,
 section,
 article,
@@ -55,21 +62,9 @@ p {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
 .hero h1 {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -83,11 +78,12 @@ h1 {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #003366;
+    color: #ffffff;
     padding: 10px;
-    max-width: 60%;
+    max-width: 95%;
     text-align: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
@@ -116,5 +112,4 @@ section {
 
 article p {
     text-align: left;
-
 }
