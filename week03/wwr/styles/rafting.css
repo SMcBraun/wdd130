@@ -1,8 +1,8 @@
 :root {
     --primary-color: #005f73;
     --secondary-color: #eee9b0;
-    --accent1-color: #0a9396;
-    --accent2-color: #e9c46b;
+    --accent1-color: 0055A4;
+    --accent2-color: #0055A4;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #0055A4;
 }
 
 header,
@@ -53,6 +53,7 @@ p {
     position: relative;
     margin: 16px;
     padding: 8px;
+    margin-bottom: 120px;
 }
 
 .hero img {
@@ -90,14 +91,15 @@ p {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: #003366;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
 }
 
 footer .socialmedia img {
     width: 30px;
+    height: 30px;
     margin: 0 5px;
 }
 
