@@ -66,3 +66,9 @@ footer {
     text-align: center;
     margin-top: 1rem;
 }
+
+.grid {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}

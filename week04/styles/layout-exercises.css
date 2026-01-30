@@ -75,3 +75,8 @@ div {
     text-align: center;
     padding: 18px;
 }
+
+main {
+    display: flex;
+    flex-direction: row-reverse: gap: 2rem;
+}

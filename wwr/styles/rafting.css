@@ -23,6 +23,18 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -112,4 +124,19 @@ section {
 
 article p {
     text-align: left;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding: 16px;
+    max-width: 100%;
+}
+
+.adventure-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
