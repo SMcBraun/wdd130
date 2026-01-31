@@ -104,16 +104,22 @@ p {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #003366;
     color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+}
+
+footer .socialmedia {
+    display: flex;
 }
 
 footer .socialmedia img {
     width: 30px;
     height: 30px;
-    margin: 0 5px;
+    margin: 10px;
 }
 
 section {
@@ -147,4 +153,10 @@ article p {
 
 .hero article h2 {
     color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
