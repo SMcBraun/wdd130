@@ -80,7 +80,6 @@ p {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
     font-size: 2rem;
@@ -144,4 +143,8 @@ article p {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.hero article h2 {
+    color: #ffffff;
 }
