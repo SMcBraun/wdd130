@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+form {
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: white;
+}
+
+.question-block {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    margin: 0 auto 10px auto;
+}
+
+.answer-box input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.submit-segment button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: blue:;
+    color: white;
+    border: none;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select. {
+    padding: 6px;
+    font-size: 1rem;
+    width: 100%
+}
+
+.code-box {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
