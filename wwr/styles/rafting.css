@@ -212,7 +212,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .contact-wrapper {
@@ -254,7 +254,8 @@ nav {
 .contact-wrapper .contact-form fieldset {
     border: none;
     display: flex;
-    gap: 10px;
+    Flex-direction: column;
+    gap: 6px;
 
 }
 
@@ -277,35 +278,47 @@ nav {
 
 footer .socialmedia {
     display: flex;
+}
 
-    footer .socialmedia img {
-        width: 30px;
-        height: 30px;
-        margin-left: 10px;
-    }
+footer .socialmedia img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
 
-    footer .socialmedia ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0;
-    }
+footer .socialmedia ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
 
-    footer .socialmedia a {
-        color: white;
-        font=weight: bold;
-        text-decoration: none;
-    }
+footer .socialmedia a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0;
-    }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
 
-    nav a {
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-    }
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-wrapper .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-wrapper .contact-form form .form-group {
+    display: flex;
+    flex-direction: column;
+}
