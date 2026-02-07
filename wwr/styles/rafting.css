@@ -24,12 +24,11 @@ footer {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 120px 1fr;
+    display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: #0055A4;
-    color: white;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #003366;
 }
 
 header img {
@@ -37,8 +36,25 @@ header img {
     height: auto;
 }
 
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+
+}
+
 header nav a {
+    text-decoration: none;
     color: white;
+    font-weight: bold;
+    background-color: #003366;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+header nav a:hover {
+    background-color: #0055A4;
 }
 
 header img {
@@ -196,13 +212,11 @@ nav {
 }
 
 .contact-form {
-    width: 50%;
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
     justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f0f8ff;
+    margin-bottom: 40px;
 }
 
 .contact-form form {
@@ -258,21 +272,75 @@ nav {
 }
 
 .contact-info {
-    display: flext;
+    display: flex;
     justify-content: space-between;
     align-items: stretch;
     margin-bottom: 40px;
     gap: 20px;
 }
 
-.map {
-    width: 50%;
+.contact-info .map,
+.contact-info .contact-form {
+    flex: 1;
+}
+
+.contact-info .map iframe {
+    width: 100%;
+    height: 100: border: 1px solid #005f73;
+    border-radius: 8px;
+}
+
+.contact-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-wrapper .map,
+.contact-wrapper .contact-form {
+    flex: 1;
+}
+
+.contact-wrapper .map iframe {
+    width: 100%;
+    min-height: 450px;
+    border: 1px solid #005f73;
+    border-radius: 8px;
+}
+
+.contact-wrapper .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-wrapper .contact-form input,
+.contact-wrapper .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #005f73;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-wrapper .contact-form fieldset {
+    border: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+.contact-wrapper .contact-form button:hover {
+    background-color: #003366;
 }
 
 .map,
 .contact-form {
-    width: 48% box-sizing: border-box;
+    width: 48%;
+    box-sizing: border-box;
 }
 
 .map iframe {
