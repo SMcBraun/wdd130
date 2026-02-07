@@ -209,7 +209,8 @@ nav {
 }
 
 .contact-form .form-bottom {
-    display: flex: flex-diection: column;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     align-items: flex-start;
 }
@@ -284,13 +285,15 @@ footer .socialmedia {
     }
 
     footer .socialmedia ul {
-        list-style: none: display: flex;
+        list-style: none;
+        display: flex;
         justify-content: space-evenly;
         padding: 0;
     }
 
     footer .socialmedia a {
-        color: white: font=weight: bold;
+        color: white;
+        font=weight: bold;
         text-decoration: none;
     }
 
