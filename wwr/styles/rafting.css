@@ -1,6 +1,8 @@
 :root {
     --primary-color: #005f73;
     --accent1-color: #0055A4;
+    --heading-color: #003366;
+    --text-color: #005f73;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -55,11 +57,6 @@ header nav a {
 
 header nav a:hover {
     background-color: #0055A4;
-}
-
-header img {
-    width: 100px;
-    height: auto;
 }
 
 h1,
@@ -211,83 +208,10 @@ nav {
     margin: 0 auto 10px auto;
 }
 
-.contact-form {
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.contact-form form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #005f73;
-    border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-}
-
-.contact-form fieldset {
-    border: none;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact-form fieldset label {
-    font-weight: normal;
-}
-
-.contact-form .checkbox-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-.contact-form button[type="submit"] {
-    background-color: #0055A4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.contact-form button:hover {
-    background-color: #003366;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-bottom: 40px;
-    gap: 20px;
-}
-
-.contact-info .map,
-.contact-info .contact-form {
-    flex: 1;
-}
-
-.contact-info .map iframe {
-    width: 100%;
-    height: 100: border: 1px solid #005f73;
-    border-radius: 8px;
+.contact-form .form-bottom {
+    display: flex: flex-diection: column;
+    gap: 10px;
+    align-items: flex-start;
 }
 
 .contact-wrapper {
@@ -357,6 +281,17 @@ footer .socialmedia {
         width: 30px;
         height: 30px;
         margin-left: 10px;
+    }
+
+    footer .socialmedia ul {
+        list-style: none: display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    footer .socialmedia a {
+        color: white: font=weight: bold;
+        text-decoration: none;
     }
 
     nav ul {
