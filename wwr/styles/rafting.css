@@ -242,6 +242,14 @@ nav {
     gap: 15px;
 }
 
+.contact-wrapper .contact-form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
 .contact-wrapper .contact-form input,
 .contact-wrapper .contact-form textarea {
     width: 100%;
@@ -254,8 +262,27 @@ nav {
 .contact-wrapper .contact-form fieldset {
     border: none;
     display: flex;
-    Flex-direction: column;
-    gap: 6px;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-wrapper .contact-form fieldset legend {
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.contact-wrapper .contact-form .radio-group {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+
+}
+
+.contact-wrapper .contact-form .radio-group li {
+    margin-bottom: 5px;
 
 }
 
@@ -321,4 +348,34 @@ nav a {
 .contact-wrapper .contact-form form .form-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contact-wrapper .contact-form fieldset {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+contact-wrapper .contact-form .radio-group {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.contact-wrapper .contact-form .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.contact-wrapper .contact-form .submit-box {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(-primary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
 }
