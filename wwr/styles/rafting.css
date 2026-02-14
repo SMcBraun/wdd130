@@ -1,9 +1,6 @@
 :root {
     --primary-color: #005f73;
-    --accent1-color: #0055A4;
     --heading-color: #003366;
-    --text-color: #005f73;
-    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +11,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Helvetica, sans-serif;
     color: #005f73;
 }
 
@@ -31,6 +28,7 @@ header {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #003366;
+    color: white;
 }
 
 header img {
@@ -38,11 +36,20 @@ header img {
     height: auto;
 }
 
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     gap: 12px;
 
+}
+
+header a {
+    color: white;
 }
 
 header nav a {
@@ -59,9 +66,13 @@ header nav a:hover {
     background-color: #0055A4;
 }
 
+nav {
+    display: flex;
+}
+
 h1,
 h2 {
-    font-family: Times New Roman, Georgia, serif;
+    font-family: "Times New Roman", Georgia, serif;
     text-align: center;
     color: #005f73;
 }
@@ -127,7 +138,7 @@ footer .socialmedia img {
     justify-content: space-between;
     width: 100%;
     padding: 0 20px;
-    ;
+
 }
 
 .employee-profiles figure {
@@ -173,7 +184,7 @@ footer .socialmedia img {
 .contact-message {
     text-align: center;
     font-weight: bold;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     margin: 20px;
     color: var(--heading-color);
 }
@@ -214,21 +225,8 @@ footer .socialmedia img {
     align-items: flex-start;
 }
 
-.message_purpose input .message-purpose legend {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.message-purpse input[type="radio"] {
-    display: block;
-    margin-bottom: 50px;
-}
-
-.message-purpose label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin: 0;
+.message-purpose input[type="radio"] {
+    margin-bottom: 6px;
 }
 
 /* MESSAGE BOX FULL WIDTH */
@@ -290,7 +288,7 @@ textarea {
 
 .grid-section h3,
 .grid-section p {
-    text-align: ceter;
+    text-align: center;
     margin: 10px 0;
 }
 
@@ -318,14 +316,6 @@ textarea {
     margin: 10px auto;
 }
 
-.adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat (5, 1fr);
-    gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto
-}
-
 .adventure-gallery img {
     width: 100%;
     height: auto;
@@ -349,7 +339,34 @@ textarea {
     padding: 0 20px;
 }
 
-.hero.img {
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    max-width: 500px;
+    ;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+.hero img {
     width: 100%;
     display: block;
 
