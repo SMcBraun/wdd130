@@ -73,20 +73,27 @@ header h1 {
 section h2 {
     background-color: #003366;
     color: white;
-    padding: 12px: margin:0;
+    padding: 12px;
+    margin: 0;
 }
 
+/* FOOTER CONTEXT CENTERING */
 footer {
+    width: 840px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--heading-color);
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
+/* SOCIAL ICONS positioning */
 footer .socialmedia {
     display: flex;
+    gap: 10px;
 }
 
 footer .socialmedia img {
@@ -95,11 +102,17 @@ footer .socialmedia img {
     margin-left: 10px;
 }
 
-employee-profiles {
-    margin: 40px 0;
-    text-align: center;
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.employee-profiles {
+    width: 840px;
+    margin: 40px auto;
+    padding: 30px 0;
     background-color: #003366;
-    padding: 40px;
 }
 
 .employee-profiles h2 {
@@ -108,14 +121,26 @@ employee-profiles {
     margin-bottom: 16px;
 }
 
+/* CENTER EMPLOYEE PROFILE*/
 .employee-profiles .profiles {
     display: flex;
     justify-content: space-between;
-    gap: 0;
+    width: 100%;
+    padding: 0 20px;
+    ;
 }
 
 .employee-profiles figure {
     max-width: 180px;
+    text-align: center;
+}
+
+/* employee names */
+.employee-profiles figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 0.9rem;
 }
 
 .employee-profiles img {
@@ -124,27 +149,52 @@ employee-profiles {
     height: auto;
 }
 
-.contact-wrapper {
-    display: flex;
-    gap: 20px;
-    margin: 40px 0;
-}
-
+/* MAP DIMENSIONS */
 .map iframe {
     width: 100%;
-    min-height: 450px;
-    border: 1px solid var (--primary-color);
-    border-radius: 8px;
+    height: 100%;
+    min-height: 100%;
 }
 
-.contact-form form {
-    grid-template-columns: 1.2fr 1fr;
-    gap: 20px;
+.map,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+.contact-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2 rem;
+    margin: 20px;
+    color: var(--heading-color);
+}
+
+.company-info {
+    text-align: center;
+}
+
+/* name/email column layout */
+.contact-form {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 15px 10px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: contents;
+}
+
+.contact-form label {
+    align-self: center;
 }
 
 .contact-form input,
@@ -157,72 +207,235 @@ employee-profiles {
     font-size: 1rem;
 }
 
-.message-group {
-    grid-column: 1 / -1;
-}
-
-.message-group label {
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-
 .message-purpose {
-    grid-column: 2 / 3;
-    border: none;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-.message-purpose legend {
+.message_purpose input .message-purpose legend {
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+.message-purpse input[type="radio"] {
+    display: block;
+    margin-bottom: 50px;
 }
 
 .message-purpose label {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 6px;
-}
-
-.contact-form textarea {
-    grid-column: 1 / -1;
-    min-height: 150px;
-    resize: vertical;
-}
-
-.checkbox-container {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-}
-
-.checkbox-container input {
+    gap: 6px;
     margin: 0;
 }
 
-.contact-form button {
-    grid-column: 1 / -1;
+/* MESSAGE BOX FULL WIDTH */
+textarea {
+    grid-column: 1 / 3;
+    min-height: 100%;
+}
+
+/* NEWSLETTER FULL WIDTH */
+.form-bottom {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     width: 100%;
+    margin: 10px auto;
+
+}
+
+.form-bottom input[type="checkbox"] {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.form-bottom label {
+    display: inline;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+/* BUTTON FULL WIDTH */
+.contact-form button {
+    grid-column: 1 / 3;
     padding: 12px;
-    background-color: var(--accent1-color);
+    background-color: #003366;
     color: white;
+    border: none;
+    font-weight: bold;
     font-size: 1rem;
-    border: 1px solid var(--primary-color): border-radius: 4px;
-    box-sizing: border-box: cursor: pointer;
+    cursor: pointer;
 }
 
 .contact-form button:hover {
     background-color: var(--heading-color);
 }
 
-.contact-info {
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-section img {
+    width: 100%;
+    /*image fills its column */
+    display: block;
+}
+
+.grid-section h3,
+.grid-section p {
+    text-align: ceter;
+    margin: 10px 0;
+}
+
+.newsletter {
     text-align: center;
-    margin: 0 auto 20px auto;
+    padding: 40px 20px;
+    background-color: #f0f8ff;
+}
+
+.newsletter input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+.newletter form {
+    display: inline-block;
+}
+
+.newspaper input,
+.newsletter button {
+    display: block;
+    margin: 10px auto;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero.img {
+    width: 100%;
+    display: block;
+
+}
+
+.welcome img {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.trips-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.trip {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    max-width: 500px;
+}
+
+.trip img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #0077b6;
+    color: white;
+}
+
+.cta-contact .button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section p {
+    text-align: center;
+    margin: 0;
+}
+
+.trips-grid h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 840px;
+    margin: 40px auto;
+}
+
+.message-purpose label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+.contact-form label[for="message"] {
+    grid-column: 1/3
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Splash Whitewater Rafting Adventures</title>
     <meta name="description"
       content="Contact Splash Whitewater Rafting Adventures. Reach out to learn more about our group discounts, reservations and other services offered.">
     <meta name="author" content="Sina McBraun">
-    <title>Contact Us - Splash Whitewater Rafting Adventures</title>
-    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -16,118 +16,110 @@
     <header>
         <img src="images/logo.png" alt="Rafting logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
+        <h1>Splash White Water Rafting Company</h1>
+        <div class="company-info">
+            <p>123 Main River Street<br>
+                Kolob, California 96792</p>
+            <p>Phone: 999-999-9999</p>
+            <p>Email: info@splashwhitewaterrafting.com</p>
 
-        <section class="contact-info">
+        </div>
+        <div class="contact-wrapper">
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137268.520825379!2d-85.72509144570058!3d-9.08535828969006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479073e603d50e67%3A0x918538dcc0b8279d!2sRafting%20Santa%20Mar%C3%ADa!5e0!3m2!1sen!2sus!4v1770445517218!5m2!1sen!2sus"
+                  title="Location map of Splash White Water Rafting Company" width="300"
+                  height="200" allowfullscreen></iframe>
+            </div>
 
-            <h1>Splash White Water Rafting Company</h1>
-
-            <address>
-                123 Main River Street<br />
-                Kolob, California<br />
-                <p>Phone: 999-999-9999</p>
-                <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
-            </address>
-
-
-            <div class="contact-wrapper">
-                <div class="map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16137268.520825379!2d-85.72509144570058!3d-9.08535828969006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479073e603d50e67%3A0x918538dcc0b8279d!2sRafting%20Santa%20Mar%C3%ADa!5e0!3m2!1sen!2sus!4v1770445517218!5m2!1sen!2sus"
-                      title="Location map of Splash White Water Rafting Company" width="600"
-                      height="450" allowfullscreen loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <div class="contact-form">
-
-
-                    <form action="#" method="post" novalidate>
-
+            <section class="contact-form-selection">
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
+                    </div>
 
-                        <label for="email">Email</label>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
+                    </div>
 
-                        <fieldset>
-                            <legend>Message Purpose</legend>
-                            <div class="radio-group">
-                                </label><input type="radio" id="purpose-general" name="purpose"
-                                  value="
-                              general" required>
-                                <label for="purpose-general">General Inquiry</label>
+                    <fieldset class="message-purpose">
+                        <legend>Message Purpose</legend>
 
-                                <input type="radio" id="purpose-reservation" name="purpose"
-                                  value="reservation">
-                                <label for="purpose-reservation">Reservation Question</label>
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
 
-                                <input type="radio" id="purpose-website" name="purpose"
-                                  value="website">
-                                <label for="purpose-website">Website Suggestion</label>
-                        </fieldset>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
 
-                        <div class="form-group message-group" <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                    </form>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
 
                     <div class="form-bottom">
-                        <div="checkbox-container">
-                            <input type="checkbox" id="subscribe" name="subscribe">
-                            <label for="subscribe">Please subscribe me to the monthly newsletter
-                            </label>
-                    </div>
-                    <button type="submit">Get in Touch!</button>
-                    </form>
-                </div>
-                </form>
-            </div>
-            <div>
-        </section>
 
-        <section class="employee-profiles">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly
+                            newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+    </main>
+
+
+    <section class="employee-profiles">
+        <div class="contact-message">
             <h2>We Are Here to Serve You</h2>
             <div class="profiles">
                 <figure>
-                    <img src="images/poseidon.jpg" alt="Poseidon Rivers, Paddle Captain" />
+                    <img src="images/poseidon.jpg" alt="Poseidon Rivers, Paddle Captain">
                     <figcaption>Poseidon Rivers, Paddle Captain</figcaption>
                 </figure>
 
-
                 <figure>
-                    <img src="images/oceanus.jpg" alt="Oceanus Vane, Trip Leader" />
+                    <img src="images/oceanus.jpg" alt="Oceanus Vane, Trip Leader">
                     <figcaption>Oceanus Vane, Trip Leader</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/calypso.jpg" alt="Calypso Vortex, Boatwoman " />
+                    <img src="images/calypso.jpg" alt="Calypso Vortex, Boatwoman ">
                     <figcaption>Calypso Vortex, Boatwoman</figcaption>
                 </figure>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Splash Whitewater Rafting Adventures | Sina McBraun</p>
-        <nav class=" socialmedia">
+        <nav class="socialmedia">
             <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
             <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="Linkedin Icon"></a>
             <a href="https://instagram.com"><img src="images/instagram.svg"
                   alt="Instagram Icon"></a>
         </nav>
-
     </footer>
-
 </body>
 
 </html>
